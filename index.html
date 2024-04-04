@@ -6,6 +6,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Exemplo básico de HTML</title>
+
+    <style>
+      /*Este é um comentário em CSS*/
+      /*Vamos selecionar uma tag para aplicar um estilo, esta ação se chama seleção de seletor, onde o seletor é a tag ou o elemento no caso o elemento pode ser um id ou class.*/
+
+      /*Vamos selecionar a lista ul e aplicar um estilo*/
+
+      /*Aqui selecionei a lista ul, desta forma seleciona todas as listas ul da página, então se eu aplicar um estilo todas serão afetadas. Por isso quando queremos afetar um elemento único ou um grupo utilizamos id para únicos e class para grupos.*/
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+      }
+
+      html {
+        height: 100%;
+      }
+
+      body {
+        height: 100%;
+      }
+
+      ul {
+        list-style: none;
+        width: 135%;
+        margin: 0 auto;
+      }
+
+      ul li {
+        display: inline;
+        padding: 0 10px;
+        margin: 0 10%;
+      }
+
+      ul li a {
+        text-decoration: none;
+        display: inline;
+      }
+
+      .container {
+        width: 75%;
+        margin: 0 auto;
+        background-color: bisque;
+        height: 100%;
+        box-sizing: border-box;
+      }
+
+      .cabecalho {
+        background-color: #ccc;
+      }
+
+      .cabecalho h1 {
+        font-size: 32px;
+        font-family: sans-serif;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -22,8 +80,24 @@
                 />
               </a>
             </li>
-            <li><a href="./paginas/contact.html"> Contact </a></li>
-            <li><a href="./paginas/about.html"> About </a></li>
+            <li>
+              <a href="./paginas/about.html">
+                <img
+                  src="./img/info.png"
+                  alt="Letra i dentro de um circulo."
+                  width="2%"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="./paginas/contact.html">
+                <img
+                  src="./img/contact.png"
+                  alt="Dedo pressionando botão."
+                  width="2%"
+                />
+              </a>
+            </li>
           </ul>
         </nav>
       </header>
